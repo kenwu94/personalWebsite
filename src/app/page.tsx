@@ -65,7 +65,7 @@ export default function Home() {
             All projects →
           </Link>
         </div>
-        <div className="grid gap-20">
+        <div className="grid gap-12">
           {projects.slice(0, 3).map((p, i) => (
             <ProjectCard key={p.slug} project={p} index={i} />
           ))}
@@ -84,13 +84,12 @@ export default function Home() {
         <div>
           <SplitHeading
             as="h2"
-            text="Serial hobbyist. {{Good enough}} never cuts it."
+            text="{{Good enough}} never cuts it."
             className="display text-5xl md:text-7xl"
           />
           <FadeUp delay={0.1}>
             <p className="mt-10 max-w-2xl text-xl text-muted">
-              Golf, food, and a year of pro Counter-Strike. I can&apos;t do anything halfway — whether that&apos;s
-              optimizing an algorithm or nailing a dish I had last week.
+              I bring the same intensity to my hobbies as I do to my work. If I take something on, I want to get good at it.
             </p>
             <Link href="/about" data-cursor="Read" className="meta mt-10 inline-block rounded-full border border-line px-6 py-3 hover:border-accent hover:text-accent">
               More about me →

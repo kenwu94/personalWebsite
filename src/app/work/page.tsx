@@ -10,7 +10,7 @@ export default function WorkPage() {
     <section className="px-5 pb-32 pt-40 md:px-10">
       <p className="meta mb-6 text-muted">( Work — {projects.length} projects )</p>
       <SplitHeading text="Things I've {{built}}" className="display mb-24 text-[15vw] md:text-[10vw]" />
-      <div className="grid gap-20">
+      <div className="grid gap-12">
         {projects.map((p, i) => (
           <ProjectCard key={p.slug} project={p} index={i} />
         ))}
